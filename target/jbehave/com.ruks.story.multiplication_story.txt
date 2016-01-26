@@ -1,0 +1,24 @@
+
+(com/ruks/story/multiplication_story.story)
+Scenario: Multiply two valid numbers
+Examples:
+Given a calculatorM
+When i multiply <number1> and <number2>
+Then the outcome should be <result>
+
+|number1|number2|result|
+|12|12|144|
+|10|10|100|
+
+Example: {number1=12, number2=12, result=144}
+Given a calculatorM
+When i multiply 12 and 12
+Then the outcome should be 144
+
+Example: {number1=10, number2=10, result=100}
+Given a calculatorM
+When i multiply 10 and 10
+Then the outcome should be 100
+
+
+

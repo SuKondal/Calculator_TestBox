@@ -1,0 +1,18 @@
+
+(com/ruks/story/division_story.story)
+Scenario: Divide two valid numbers
+Examples:
+Given a calculatorD
+When i divide <number1> with <number2>
+Then the outcome should be <result>
+
+|number1|number2|result|
+|12|12|1|
+
+Example: {number1=12, number2=12, result=1}
+Given a calculatorD
+When i divide 12 with 12
+Then the outcome should be 1
+
+
+

@@ -1,0 +1,18 @@
+
+(com/ruks/story/addition_story.story)
+Scenario: Add two valid numbers
+Examples:
+Given a calculatorA
+When i add <number1> and <number2>
+Then the outcome should be <result>
+
+|number1|number2|result|
+|10|10|20|
+
+Example: {number1=10, number2=10, result=20}
+Given a calculatorA
+When i add 10 and 10
+Then the outcome should be 20
+
+
+
